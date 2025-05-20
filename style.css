@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container-fluid {
+  background-color: #121212;
+  color: white;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #ffffff20;
+}
+.font-size {
+  font-size: 12px;
+  letter-spacing: 0.1rem;
+}
+.icon-arrow {
+  width: 1rem;
+}
+.left-side {
+  height: 89px;
+  background-color: #121212;
+}
+.left-side {
+  position: sticky; /* ← remove this if not needed */
+}
+
+.logo {
+  max-width: 120px;
+  height: 25px;
+  margin-left: 10.2rem;
+  margin-bottom: 10px;
+}
+.logo {
+  max-height: 30px;
+}
+
+ul li {
+  list-style: none;
+}
+.nav-list {
+  color: white;
+}
+.right-side {
+  display: grid;
+  grid-template-columns: 38px 207px;
+  align-items: center;
+  color: white;
+  margin-left: auto;
+}
+.svg-1 {
+  width: 21px;
+}
+.svg-2 {
+  width: 48px;
+}
+element.style {
+  border: none;
+}
+
+header {
+  position: sticky;
+  top: 0%;
+}
+
+nav.navbar .container-fluid {
+  border-bottom: none;
+}
+.founder {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: 600px;
+  
+}
+
+/* footer 
+====================================*/
+
+.footer {
+  background-color: #121212;
+  width: 100%;
+  margin-top: 100px;
+}
+.main-foot{
+height: 250px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+.foot{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* =============================================== */
+
+@media (max-width: 992px) {
+  nav.navbar #navMenu.show {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #121212;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  
+}
+@media (max-width: 576px){
+  .founder{
+    display: flex;
+    text-align: center;
+    
+  }
+  .buttn{
+    display: flex;
+    justify-content: center;
+  }
+}
+/* ================================================ */
+
+
+
+
+@media (max-width: 992px) {
+  .right-side {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto;
+    padding-right: 1rem;
+  }
+  .logo {
+    margin: 0 auto 10px auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .right-side {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  .founder {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .founder h3,
+  .founder p {
+    width: 100%;
+  }
+
+  img.w-100 {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .footer ul li {
+    display: block;
+    margin: 5px 0;
+    text-align: center;
+  }
+}
